@@ -1,0 +1,18 @@
+.navbar {
+    padding: 1rem 0;
+    background: none !important;
+}
+
+.navbar-nav {
+    gap: 4rem;
+}
+
+.nav-link {
+    font-size: 16px;
+    color: $secondary-text !important;
+    font-family: "Poppins", sans-serif;
+
+    &:hover {
+        color: $secondary !important;
+    }
+}

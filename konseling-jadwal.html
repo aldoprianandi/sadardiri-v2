@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jadwal Konseling - SadarDiri</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Signika:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.svg" alt="Logo SadarDiri" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto align-items-center">
+            <a class="nav-link" href="index.html">Beranda</a>
+            <a class="nav-link active" aria-current="page" href="services.html"
+              >Layanan</a
+            >
+            <a class="nav-link" href="about.html">Tentang Kami</a>
+            <a class="nav-link" href="#"
+              ><img
+                src="/img/chat-icon1.png"
+                alt=""
+                style="height: 48px; width: 48px"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section
+        class="konseling bg-image"
+        style="background-image: url('./img/bg-kotak.png'); height: 100vh"
+      >
+        <div class="container konseling-container bg-cover">
+          <h1>Jadwal Konseling</h1>
+          <p>Pilih jadwal yang sesuai dengan kondisi kamu</p>
+
+          <div class="row w-75 my-5">
+            <div class="col d-flex align-items-center justify-content-center">
+              <!-- Elemen persegi dengan warna primer -->
+              <div
+                class="step-active rounded d-flex flex-column align-items-center justify-content-center"
+                style="width: 32px; height: 32px"
+              >
+                <p class="p2 m-0 text-white">1</p>
+              </div>
+              <!-- Teks "Pilih Paket" di bawah kolom -->
+              <div class="ms-2 text-center">
+                <p class="m-0">Pilih Paket</p>
+              </div>
+            </div>
+
+            <div class="col d-flex align-items-center justify-content-center">
+              <!-- Elemen persegi dengan warna primer -->
+              <div
+                class="step-active rounded d-flex flex-column align-items-center justify-content-center"
+                style="width: 32px; height: 32px"
+              >
+                <p class="p2 m-0 text-white">2</p>
+              </div>
+              <!-- Teks "Pilih Paket" di bawah kolom -->
+              <div class="ms-2 text-center">
+                <p class="m-0">Pilih Psikolog</p>
+              </div>
+            </div>
+
+            <div class="col d-flex align-items-center justify-content-center">
+              <!-- Elemen persegi dengan warna primer -->
+              <div
+                class="step-active rounded d-flex flex-column align-items-center justify-content-center"
+                style="width: 32px; height: 32px"
+              >
+                <p class="p2 m-0 text-white">3</p>
+              </div>
+              <!-- Teks "Pilih Paket" di bawah kolom -->
+              <div class="ms-2 text-center">
+                <p class="m-0">Atur Jadwal</p>
+              </div>
+            </div>
+
+            <div class="col d-flex align-items-center justify-content-center">
+              <!-- Elemen persegi dengan warna primer -->
+              <div
+                class="step rounded d-flex flex-column align-items-center justify-content-center"
+                style="width: 32px; height: 32px"
+              >
+                <p class="p2 m-0 text-white">4</p>
+              </div>
+              <!-- Teks "Pilih Paket" di bawah kolom -->
+              <div class="ms-2 text-center">
+                <p class="m-0">Bayar</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card psikolog -->
+          <div
+            class="card d-flex w-100 rounded-4"
+            style="background-color: #545db3"
+          >
+            <div class="card-body m-5">
+              <h5 class="card-title text-white mb-5">Pilih Waktu Konsultasi</h5>
+
+              <div class="row">
+                <div
+                  class="col bg-white border rounded text-center p-0 py-2 mx-3 btn-konseling"
+                >
+                  <p class="p2 fw-bold">Selasa</p>
+                  <p>10 Desember</p>
+                </div>
+
+                <div
+                  class="col border border-2 rounded text-center p-0 py-2 mx-3 btn-konseling"
+                >
+                  <p class="p2 fw-bold text-white">Rabu</p>
+                  <p class="text-white">11 Desember</p>
+                </div>
+
+                <div
+                  class="col border border-2 rounded text-center p-0 py-2 mx-3 btn-konseling"
+                >
+                  <p class="p2 fw-bold text-white">Kamis</p>
+                  <p class="text-white">12 Desember</p>
+                </div>
+
+                <div
+                  class="col border border-2 rounded text-center p-0 py-2 mx-3 btn-konseling"
+                >
+                  <p class="p2 fw-bold text-white">Jum'at</p>
+                  <p class="text-white">13 Desember</p>
+                </div>
+
+                <div
+                  class="col border border-2 rounded text-center p-0 py-2 mx-3 btn-konseling"
+                >
+                  <p class="p2 fw-bold text-white">Sabtu</p>
+                  <p class="text-white">14 Desember</p>
+                </div>
+
+                <div
+                  class="col border border-2 rounded text-center p-0 py-2 mx-3 btn-konseling"
+                >
+                  <p class="p2 fw-bold text-white">Minggu</p>
+                  <p class="text-white">15 Desember</p>
+                </div>
+              </div>
+
+              <div class="row mt-5">
+                <div
+                  class="col border border-2 rounded text-center p-0 py-2 mx-3 btn-konseling"
+                >
+                  <p class="p2 fw-bold mb-0 text-white">09.00</p>
+                </div>
+
+                <div
+                  class="col bg-white border rounded text-center p-0 py-2 mx-3 btn-konseling"
+                >
+                  <p class="p2 fw-bold mb-0">12.00</p>
+                </div>
+
+                <div
+                  class="col border border-2 rounded text-center p-0 py-2 mx-3 btn-konseling"
+                >
+                  <p class="p2 fw-bold mb-0 text-white">15.00</p>
+                </div>
+
+                <div
+                  class="col border border-2 rounded text-center p-0 py-2 mx-3 btn-konseling"
+                >
+                  <p class="p2 fw-bold mb-0 text-white">17.00</p>
+                </div>
+
+                <div
+                  class="col border border-2 rounded text-center p-0 py-2 mx-3 btn-konseling"
+                >
+                  <p class="p2 fw-bold mb-0 text-white">19.00</p>
+                </div>
+
+                <div
+                  class="col border border-2 rounded text-center p-0 py-2 mx-3 btn-konseling"
+                >
+                  <p class="p2 fw-bold mb-0 text-white">20.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- End card psikolog -->
+
+          <a href="#" class="btn btn-primary" style="margin-top: 128px"
+            >Jadwalkan Sekarang!</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4" id="footer1">
+            <img
+              src="img/logo.svg"
+              alt="Logo SadarDiri Footer"
+              class="footer-logo"
+            />
+            <p class="p2">
+              Sadardiri. berfokus pada kesehatan mental dan emosional dengan
+              layanan tes kepribadian dan kesehatan mental online, serta
+              konseling online atau tatap muka. Kami berkomitmen untuk
+              memberikan layanan terbaik untuk meningkatkan kualitas hidup klien
+              kami.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h6>Perusahaan</h6>
+            <ul>
+              <li><a href="#">Tentang Kami</a></li>
+              <li><a href="#">Kontak</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h6>Layanan</h6>
+            <ul>
+              <li><a href="#">Konsultasi</a></li>
+              <li><a href="#">Tes Kepribadian</a></li>
+              <li><a href="#">Love Language</a></li>
+              <li><a href="#">Cek Kesehatan Mental</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h6>Ikuti Kami</h6>
+            <ul class="footer-social">
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

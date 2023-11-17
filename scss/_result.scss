@@ -1,0 +1,71 @@
+.result {
+    padding: 5rem 0;
+
+    &-content {
+        width: 80%;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+
+    &-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-output {
+        display: flex;
+        align-items: center;
+
+        &-left {
+            padding: 0 1rem;
+            border-right: 2px solid $secondary-text;
+        }
+
+        &-right {
+            padding: 0 1rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.25rem 1rem;
+            list-style: none;
+
+            li {
+                font-size: 16px;
+                font-family: "Poppins", sans-serif;
+                color: $primary;
+            }
+        }
+    }
+
+    .floating-object {
+        img {
+            &:first-child {
+                position: absolute;
+                left: 0;
+                top: 140px;
+                z-index: -1;
+            }
+            &:nth-child(2) {
+                position: absolute;
+                right: 0;
+                top: 400px;
+                z-index: -1;
+            }
+            &:nth-child(3) {
+                position: absolute;
+                left: 0;
+                top: 1400px;
+                z-index: -1;
+            }
+        }
+    }
+
+    &-btn {
+        margin-top: 2rem;
+    }
+
+    #person-img {
+        margin: 2rem 0;
+        width: 30%;
+    }
+}

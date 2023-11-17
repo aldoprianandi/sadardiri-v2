@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Signika", sans-serif;
+}
+
+p {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 18px;
+    color: $secondary-text;
+}
+
+h1 {
+    color: $primary;
+    font-size: 60px;
+}
+
+h2 {
+    color: $primary;
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 24px;
+}
+
+h6 {
+    font-size: 20px;
+    color: $secondary-text;
+}
+
+p.p2 {
+    font-size: 16px;
+    color: $secondary-text;
+}
+
+.nav-link ~ .active {
+    color: $secondary !important;
+}
+
+ol {
+    li {
+        font-family: "Poppins", sans-serif;
+        color: $secondary-text;
+    }
+}
+
+ul {
+    padding: 0;
+    padding-left: 1rem;
+
+    li {
+        a {
+            font-family: "Poppins", sans-serif;
+            text-decoration: none;
+            color: $secondary-text;
+            transition: all 0.3s ease;
+
+            &:hover {
+                color: $secondary;
+            }
+        }
+    }
+}
+
+.btn {
+    display: inline-block !important;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    font-size: 20px;
+    font-family: "Signika", sans-serif;
+    border: none;
+}
+
+.btn-primary {
+    background-color: $primary !important;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: darken($primary, 10%) !important;
+        scale: 1.1;
+    }
+}

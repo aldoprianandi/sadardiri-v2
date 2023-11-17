@@ -1,0 +1,162 @@
+@media screen and (max-width: 768px) {
+    .navbar {
+        background-color: white !important;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+    .warning {
+        &-list {
+            font-size: 14px;
+            width: 100%;
+        }
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+
+    h5 {
+        font-size: 20px;
+    }
+
+    h6 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+    p.p2 {
+        font-size: 14px;
+    }
+
+    .navbar-nav {
+        padding: 2rem 0;
+        gap: 0.5rem;
+
+        .nav-link {
+            text-align: center;
+        }
+    }
+
+    .about {
+        &-container {
+            gap: 2rem;
+            img {
+                width: 80%;
+                margin-bottom: 1rem;
+            }
+        }
+        &-row {
+            flex-direction: column;
+            .col-md-6 {
+                text-align: center;
+            }
+        }
+    }
+
+    .footer > .col-md-4,
+    .col-md-3,
+    .col-md-2 {
+        text-align: center !important;
+
+        ul {
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+    }
+
+    .reverse {
+        flex-direction: column-reverse;
+    }
+
+    .floating-object img {
+        width: 40%;
+    }
+
+    .result {
+        #person-img {
+            margin: 1rem 0;
+            width: 50%;
+        }
+    }
+
+    .footer {
+        &-social {
+            justify-content: center;
+        }
+        ul {
+            li {
+                font-size: 14px;
+            }
+        }
+        #footer1 {
+            text-align: center;
+            p {
+                width: 80%;
+                margin: auto;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    .test {
+        &-container {
+            margin: 7rem 0;
+
+            img {
+                width: 80%;
+            }
+
+            h6 {
+                width: 80%;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    .konsultasi {
+        &-flow {
+            flex-direction: column;
+        }
+
+        &-arrow {
+            width: 32px;
+            rotate: 90deg;
+            margin: auto;
+        }
+
+        &-offer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &-right {
+                align-items: center;
+                text-align: center;
+            }
+        }
+    }
+}

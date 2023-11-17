@@ -1,0 +1,20 @@
+.footer {
+    padding: 5rem 0;
+    background-color: $cream;
+
+    &-logo {
+        margin-bottom: 1rem;
+    }
+
+    &-social {
+        padding: 0;
+        display: flex;
+        gap: 0.75rem;
+        li {
+            display: inline-flex;
+            a {
+                font-size: 32px;
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.warning {
+    margin: 5rem 0;
+    margin-bottom: 10rem;
+
+    &-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-list {
+        margin: 2rem auto;
+        width: 80%;
+    }
+}
