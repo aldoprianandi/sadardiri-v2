@@ -1,48 +1,399 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>List</title>
-    <style>
-      body {
-        display: flex;
-        min-height: 100vh;
-        align-items: center;
-        justify-content: center;
-        font-size: 24px;
-      }
-
-      ol {
-        padding: 0;
-        margin: 0;
-      }
-    </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SadarDiri Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Signika:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/stylejsn.css" />
   </head>
   <body>
-    <ol>
-      <h1>
-        SadarDiri <br />
-        Page List
-      </h1>
-      <li><a href="result.html">Result</a></li>
-      <li><a href="warning.html">Warning</a></li>
-      <li><a href="about.html">Tentang Kami</a></li>
-      <li><a href="tes-kepribadian.html">Tes Kepribadian</a></li>
-      <li><a href="konsultasi.html">Konsultasi</a></li>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo.svg" alt="Logo SadarDiri" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link" href="index.html">Beranda</a>
+            <a class="nav-link" aria-current="page" href="konsultasi.html"
+              >Layanan</a
+            >
+            <a class="nav-link" href="about.html">Tentang Kami</a>
+            <a class="nav-link" href="register.html">Daftar</a>
+            <a class="nav-link" href="login.html">Masuk</a>
+          </div>
+        </div>
+      </div>
+    </nav>
 
-      <li><a href="loveLanguange.html">loveLanguange</a></li>
-      
+    <main>
+      <section class="hero" id="hero">
+        <div class="container hero-container">
+          <h1 class="hero-title">
+            Kenali Dirimu dengan Baik
+            <img
+              class="hero-title-overlay"
+              src="./img/hero-title-overlay.svg"
+              alt="Hero Title Overlay"
+            />
+          </h1>
+          <img
+            class="hero-image"
+            src="./img/hero-illustration.svg"
+            alt="Hero Illustration"
+          />
+          <a class="btn-scrolldown" href="#mood"
+            ><img src="./img/icon-scrolldown.svg" alt="Icon Scrolldown" />scroll
+            down</a
+          >
+        </div>
+      </section>
 
+      <section class="mood" id="mood">
+        <div class="container mood-container">
+          <div class="mood-header header">
+            <p class="mood-subtitle">Ekspresikan moodmu dengan kami</p>
+            <h2 class="mood-title">Gimana <span>Perasaanmu</span> Hari Ini?</h2>
+          </div>
+          <div class="row d-flex align-items-center mood-content">
+            <div class="col-md-4">
+              <div class="mood-list">
+                <button class="mood-item active" data-index="0">
+                  <h6>BAIK</h6>
+                </button>
+                <button class="mood-item" data-index="1"><h6>SEDIH</h6></button>
+                <button class="mood-item" data-index="2"><h6>OKAY</h6></button>
+                <button class="mood-item" data-index="3"><h6>CEMAS</h6></button>
+                <button class="mood-item" data-index="4">
+                  <h6>STRESS</h6>
+                </button>
+                <button class="mood-item" data-index="5"><h6>LELAH</h6></button>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="mood-details">
+                <img
+                  src="img/mood-baik.svg"
+                  alt="Mood Baik"
+                  class="mood-image"
+                />
+                <div class="mood-details-content">
+                  <h4 class="mood-details-name">BAIK</h4>
+                  <p class="mood-details-description">
+                    Senang mendengarnya! Kami senang kamu merasa baik dan
+                    bersemangat hari ini. Terus jaga semangatmu ya! Jangan lupa
+                    untuk tetap menjaga kesehatan fisik dan mentalmu.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <li><a href="talk2someone.html">Talk-2-Someone</a></li>
-      <li><a href="konseling-paket.html">konseling-paket</a></li>
-      <li><a href="konseling-psikolog.html">konseling-psikolog</a></li>
-      <li><a href="konseling-jadwal.html">konseling-jadwal</a></li>
-      <li><a href="konseling-payment.html">konseling-payment</a></li>
-      <li><a href="konseling-timer.html">konseling-timer</a></li>
-      <li><a href="konseling-chat.html">konseling-chat</a></li>
-    </ol>
+      <section class="service" id="service">
+        <div class="container service-container">
+          <div class="service-header header">
+            <p class="service-subtitle">Cari tahu apa kebutuhanmu</p>
+            <h2>Layanan <span>Kami</span></h2>
+          </div>
+          <div class="service-list">
+            <button class="service-item active" data-index="0">
+              Konsultasi
+            </button>
+            <button class="service-item" data-index="1">Tes Kepribadian</button>
+            <button class="service-item" data-index="2">Love Language</button>
+            <button class="service-item" data-index="3">Talk-2-Someone</button>
+          </div>
+          <div class="service-content">
+            <img
+              class="service-img"
+              src="./img/service1.svg"
+              alt="Service Illustration"
+            />
+            <div class="service-details">
+              <h4 class="service-title">Konsultasi dengan Ahli</h4>
+              <p class="service-desc">
+                Kalau lagi down, jangan tahan sendiri. Konsul sama ahli
+                kesehatan mental kami aja
+              </p>
+              <a href="#" class="service-btn">Mau Tahu Dong</a>
+            </div>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonial">
+        <div class="container testimonial-container">
+          <div class="testimonial-header header">
+            <h2>Apa Kata <span>Mereka</span></h2>
+            <p>
+              Pengalaman mereka konsultasi sama ahli kesehatan mental kami bikin
+              hati jadi adem.
+            </p>
+          </div>
+          <div class="row testimonial-content">
+            <div class="col-md-6">
+              <div class="testimonial-card">
+                <img
+                  class="testimonial-image"
+                  src="./img/testi1.png"
+                  alt="Testimonial Profile Pic"
+                />
+                <h5 class="testimonial-name">Clara Rochefort</h5>
+                <p class="testimonial-job">Mahasiswa</p>
+                <p class="testimonial-text">
+                  “ Dari tes kepribadian saya mengetahui jika saya cenderung
+                  menjadi sangat kreatif dan berpikir out-of-the-box “
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="testimonial-card">
+                <img
+                  class="testimonial-image"
+                  src="./img/testi2.png"
+                  alt="Testimonial Profile Pic"
+                />
+                <h5 class="testimonial-name">David Wotfard</h5>
+                <p class="testimonial-job">Pekerja Kantor</p>
+                <p class="testimonial-text">
+                  “ Dari tes yang saya lakukan, saya sadar bahwa saya lebih
+                  introvert dan lebih suka bekerja sendiri daripada dengan tim
+                  :) “
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="offer">
+        <div class="container offer-container">
+          <div class="offer-button">
+            <h2>Kepo dengan <span>diri kamu?</span></h2>
+            <a href="#service" class="btn btn-primary">Tes Sekarang</a>
+          </div>
+          <div class="offer-disclaimer">
+            <img src="./img/icon-info.png" alt="Icon Info" />
+            <h6>
+              <span>Disclaimer:</span> Ini adalah situs informasi. Tidak
+              dimaksudkan untuk digunakan sebagai alat diagnosis atau
+              pengobatan. Penyakit mental hanya dapat didiagnosis dan diobati
+              oleh terapis yang terlatih.
+            </h6>
+          </div>
+          <a class="btn-scrolldown" href="#hero"
+            >back to top
+            <img src="./img/icon-scrolldown.svg" alt="Icon Scrolldown"
+          /></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4" id="footer1">
+            <img
+              src="img/logo.svg"
+              alt="Logo SadarDiri Footer"
+              class="footer-logo"
+            />
+            <p class="p2">
+              Sadardiri. berfokus pada kesehatan mental dan emosional dengan
+              layanan tes kepribadian dan kesehatan mental online, serta
+              konseling online atau tatap muka. Kami berkomitmen untuk
+              memberikan layanan terbaik untuk meningkatkan kualitas hidup klien
+              kami.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h6>Perusahaan</h6>
+            <ul>
+              <li><a href="#">Tentang Kami</a></li>
+              <li><a href="#">Kontak</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h6>Layanan</h6>
+            <ul>
+              <li><a href="#">Konsultasi</a></li>
+              <li><a href="#">Tes Kepribadian</a></li>
+              <li><a href="#">Love Language</a></li>
+              <li><a href="#">Cek Kesehatan Mental</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h6>Ikuti Kami</h6>
+            <ul class="footer-social">
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (window.innerWidth < 768) {
+          document.querySelector(".hero-image").src =
+            "./img/hero-illustration-mobile.svg";
+        } else {
+          document.querySelector(".hero-image").src =
+            "./img/hero-illustration.svg";
+        }
+      });
+
+      const moodList = document.querySelectorAll(".mood-item");
+      const moodName = document.querySelector(".mood-details-name");
+      const moodDesc = document.querySelector(".mood-details-description");
+      const moodImage = document.querySelector(".mood-image");
+
+      moodList.forEach((mood) => {
+        mood.addEventListener("click", () => {
+          moodList.forEach((mood) => {
+            mood.classList.remove("active");
+          });
+          mood.classList.add("active");
+
+          moodName.textContent = moodData[mood.dataset.index].name;
+          moodDesc.textContent = moodData[mood.dataset.index].desc;
+          moodImage.src = `img/${moodData[mood.dataset.index].img}`;
+          moodImage.alt = `Mood ${moodData[mood.dataset.index].name}`;
+        });
+      });
+
+      const moodData = [
+        {
+          name: "BAIK",
+          img: "mood-baik.svg",
+          desc: "Senang mendengarnya! Kami senang kamu merasa baik dan bersemangat hari ini. Terus jaga semangatmu ya! Jangan lupa untuk tetap menjaga kesehatan fisik dan mentalmu.",
+        },
+        {
+          name: "SEDIH",
+          img: "Sedih.png",
+          desc: "Maaf atas ketidaknyamanannya. Kami mengerti bahwa Anda sedih hari ini. Semoga perasaan sedih Anda segera berlalu dan Anda menemukan kenyamanan dan kebahagiaan kembali.",
+        },
+        {
+          name: "OKAY",
+          img: "Okay.png",
+          desc: "Senang mendengar bahwa Anda merasa okay hari ini. Semoga perasaan positif ini terus berlanjut dan memberi Anda energi positif untuk menghadapi hari-hari mendatang. Terus jaga keseimbangan emosional dan manfaatkan perasaan baik ini untuk mencapai tujuan dan kebahagiaan Anda.",
+        },
+        {
+          name: "CEMAS",
+          img: "Cemas.png",
+          desc: "Coba lakukan teknik pernapasan dan relaksasi untuk mengurangi kecemasan. Jangan ragu untuk berbicara dengan seseorang yang dapat dipercaya. Jika perlu, pertimbangkan mencari bantuan profesional. Tetaplah kuat, ada harapan untuk merasa lebih baik.",
+        },
+        {
+          name: "STRESS",
+          img: "Stress.png",
+          desc: "Maaf mendengar bahwa Anda merasa stress. Coba luangkan waktu untuk istirahat dan relaksasi. Berbagi perasaan Anda dengan orang dekat. Jika perlu, cari bantuan profesional. Anda tidak sendirian dan ada harapan untuk merasa lebih baik.",
+        },
+        {
+          name: "LELAH",
+          img: "Lelah.png",
+          desc: "Pastikan Anda mendapatkan istirahat yang cukup dan tidur yang baik. Perhatikan pola makan dan jangan ragu untuk meminta bantuan jika perlu. Semoga Anda segera merasa segar kembali.",
+        },
+      ];
+
+      const serviceList = document.querySelectorAll(".service-item");
+      const serviceImg = document.querySelector(".service-img");
+      const serviceTitle = document.querySelector(".service-title");
+      const serviceDesc = document.querySelector(".service-desc");
+      const serviceBtn = document.querySelector(".service-btn");
+
+      serviceList.forEach((service) => {
+        service.addEventListener("click", () => {
+          serviceList.forEach((service) => {
+            service.classList.remove("active");
+          });
+          service.classList.add("active");
+
+          serviceTitle.textContent = serviceData[service.dataset.index].title;
+          serviceDesc.textContent = serviceData[service.dataset.index].desc;
+          serviceImg.src = `img/${serviceData[service.dataset.index].image}`;
+          serviceImg.alt = `Layanan ${
+            serviceData[service.dataset.index].title
+          }`;
+          serviceBtn.href = serviceData[service.dataset.index].link;
+        });
+      });
+
+      const serviceData = [
+        {
+          title: "Konsultasi dengan Ahli",
+          desc: "Kalau lagi down, jangan tahan sendiri. Konsul sama ahli kesehatan mental kami aja",
+          link: "konsultasi.html",
+          image: "service1.svg",
+        },
+        {
+          title: "Ayo Tes Kepribadian Kamu!",
+          desc: "Kalau kamu mau tau kepribadian kamu ayo cek bareng kami biar lebih mengenal diri",
+          link: "tes-kepribadian.html",
+          image: "service1.svg",
+        },
+        {
+          title: "Buat Pasanganmu Bahagia",
+          desc: "Lagi butuh cara buat pasanganmu bahagia? ayo cari tahu gimana caranya",
+          link: "loveLanguange.html",
+          image: "service1.svg",
+        },
+        {
+          title: "Ayo Berkeluh Kesah",
+          desc: "Hilangkan beban yang ada di pikiran kamu ke orang yang tepat dan tempat yang tepat",
+          link: "talk2someone.html",
+          image: "service1.svg",
+        },
+      ];
+    </script>
   </body>
 </html>
